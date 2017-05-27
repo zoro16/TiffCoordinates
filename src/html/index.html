@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+        <title>Processing TIFF</title>
+        <script src="https://cdn.rawgit.com/seikichi/tiff.js/master/tiff.min.js"></script>
+        <script data-require="jquery@2.1.4" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="../lib/jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="../lib/jquery.selectareas.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+
+        <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="../css/jquery.selectareas.css" media="screen" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>Select Areas/Coordinates from the TIFF Image</h1>
+            <div class="image-decorator" >
+                <p id="pngImg"></p>
+            </div>
+
+            <input type="button" id="zoom-in" value="Zoom In" />
+            <input type="button" id="zoom-out" value="Zoom Out" />
+            <div style="float: left; width: 65%;">
+                <div id="frame" class="frame" style="margin: 0 0.3em; width: 500px; height: 500;">
+                    <input type="file" />
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td class="actions">
+                        <input type="button" id="btnView" value="Display areas" class="actionOn" />
+                        <input type="button" id="btnViewRel" value="Display relative" class="actionOn" />
+                        <input type="button" id="btnNew" value="Add New" class="actionOn" />
+                        <input type="button" id="btnDestroy" value="Reset" class="actionOn" />
+                        <input type="button" id="btnCreate" value="Create" class="actionOff" />
+                        <input type="button" id="saveBtn" value="Save Coordinates"  />                  
+                    </td>
+                    <td>
+                        <div id="output" class='output'> </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>
